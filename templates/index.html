@@ -1,0 +1,3471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================================================
+         DOCUMENT / SEO
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Abdirahman Mohamed Salat — Python Developer, AI Automation Engineer and Data & Technology Professional building practical software, automation systems, data solutions and modern web applications."
+    >
+
+    <meta
+        name="author"
+        content="Abdirahman Mohamed Salat"
+    >
+
+    <meta
+        name="keywords"
+        content="Abdirahman Mohamed Salat, Python Developer, AI Automation Engineer, Data Analyst, Django Developer, Flask Developer, n8n Automation, Software Developer, Data Analytics, Web Developer, Ethiopia"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large"
+    >
+
+    <meta
+        name="theme-color"
+        content="#07111f"
+    >
+
+    <meta
+        name="color-scheme"
+        content="dark"
+    >
+
+    <meta
+        name="format-detection"
+        content="telephone=yes"
+    >
+
+    <link
+        rel="canonical"
+        href="{{ request.url }}"
+    >
+
+
+    <!-- =========================================================
+         OPEN GRAPH
+    ========================================================== -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="{{ request.url }}"
+    >
+
+    <meta
+        property="og:title"
+        content="Abdirahman Mohamed Salat | Python Developer & AI Automation Engineer"
+    >
+
+    <meta
+        property="og:description"
+        content="Python Developer, AI Automation Engineer and Data & Technology Professional building practical digital solutions."
+    >
+
+    <meta
+        property="og:image"
+        content="{{ url_for('static', filename='images/profile.jpg', _external=True) }}"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Professional portrait of Abdirahman Mohamed Salat"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Abdirahman Mohamed Salat"
+    >
+
+    <meta
+        property="og:locale"
+        content="en_US"
+    >
+
+
+    <!-- =========================================================
+         TWITTER / X
+    ========================================================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Abdirahman Mohamed Salat | Python Developer"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Python Developer, AI Automation Engineer and Data & Technology Professional."
+    >
+
+    <meta
+        name="twitter:image"
+        content="{{ url_for('static', filename='images/profile.jpg', _external=True) }}"
+    >
+
+    <meta
+        name="twitter:image:alt"
+        content="Professional portrait of Abdirahman Mohamed Salat"
+    >
+
+
+    <!-- =========================================================
+         TITLE
+    ========================================================== -->
+
+    <title>
+        Abdirahman Mohamed Salat | Python Developer & AI Automation Engineer
+    </title>
+
+
+    <!-- =========================================================
+         FAVICON
+    ========================================================== -->
+
+    <link
+        rel="icon"
+        type="image/jpeg"
+        href="{{ url_for('static', filename='images/profile.jpg') }}"
+    >
+
+
+    <!-- =========================================================
+         PRECONNECT
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+
+    <!-- =========================================================
+         FONTS
+    ========================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+
+
+    <!-- =========================================================
+         MAIN STYLESHEET
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+
+    <!-- =========================================================
+         STRUCTURED DATA
+    ========================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abdirahman Mohamed Salat",
+        "jobTitle": "Python Developer & AI Automation Engineer",
+        "description": "Multidisciplinary professional working across healthcare, technology, data analytics, software development and AI automation.",
+        "url": "{{ request.url }}",
+        "image": "{{ url_for('static', filename='images/profile.jpg', _external=True) }}",
+        "email": "mailto:abdi0964moha@gmail.com",
+        "telephone": "+251964029601",
+        "sameAs": [
+            "https://www.linkedin.com/in/abdirahman-mohamed-562218408/",
+            "https://web.facebook.com/adammohamed.salat"
+        ],
+        "knowsAbout": [
+            "Python",
+            "Django",
+            "Flask",
+            "AI Automation",
+            "n8n",
+            "Data Analytics",
+            "PostgreSQL",
+            "SQLite",
+            "JavaScript",
+            "REST APIs",
+            "Web Development"
+        ]
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================== -->
+
+<div
+    class="page-loader"
+    id="pageLoader"
+    aria-hidden="true"
+>
+
+    <div class="loader-content">
+
+        <span
+            class="loader-logo"
+            aria-hidden="true"
+        >
+            AM
+        </span>
+
+        <span
+            class="loader-line"
+            aria-hidden="true"
+        ></span>
+
+        <span class="sr-only">
+            Loading portfolio
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NOSCRIPT
+========================================================== -->
+
+<noscript>
+
+    <div class="noscript-message">
+
+        JavaScript is disabled. The portfolio remains accessible,
+        but some interactive features may not work.
+
+    </div>
+
+</noscript>
+
+
+<!-- =========================================================
+     SKIP LINK
+========================================================== -->
+
+<a
+    href="#main-content"
+    class="skip-link"
+>
+    Skip to main content
+</a>
+
+
+<!-- =========================================================
+     HEADER
+========================================================== -->
+
+<header
+    class="header"
+    id="header"
+>
+
+    <div class="container">
+
+        <nav
+            class="navbar"
+            aria-label="Primary navigation"
+        >
+
+
+            <!-- =================================================
+                 BRAND
+            ================================================== -->
+
+            <a
+                href="#home"
+                class="logo"
+                aria-label="Abdirahman Mohamed Salat - Home"
+            >
+
+                <span
+                    class="logo-mark"
+                    aria-hidden="true"
+                >
+                    AM
+                </span>
+
+                <span class="logo-text">
+
+                    <strong>
+                        Abdirahman
+                    </strong>
+
+                    <small>
+                        Mohamed Salat
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 NAVIGATION
+            ================================================== -->
+
+            <div class="nav-wrapper">
+
+                <ul
+                    class="nav-menu"
+                    id="navMenu"
+                >
+
+                    <li>
+                        <a
+                            href="#home"
+                            class="nav-link active"
+                            data-section="home"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#about"
+                            class="nav-link"
+                            data-section="about"
+                        >
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#services"
+                            class="nav-link"
+                            data-section="services"
+                        >
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#skills"
+                            class="nav-link"
+                            data-section="skills"
+                        >
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#experience"
+                            class="nav-link"
+                            data-section="experience"
+                        >
+                            Experience
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#projects"
+                            class="nav-link"
+                            data-section="projects"
+                        >
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#education"
+                            class="nav-link"
+                            data-section="education"
+                        >
+                            Education
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#contact"
+                            class="nav-link nav-contact"
+                            data-section="contact"
+                        >
+                            Contact
+                            <i
+                                class="fas fa-arrow-up-right-from-square"
+                                aria-hidden="true"
+                            ></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 HEADER ACTION
+            ================================================== -->
+
+            <div class="header-actions">
+
+                <a
+                    href="#contact"
+                    class="header-cta"
+                >
+
+                    <span>
+                        Let's Talk
+                    </span>
+
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 MOBILE MENU
+            ================================================== -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navMenu"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <span class="sr-only">
+                    Menu
+                </span>
+
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================== -->
+
+<main id="main-content">
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<section
+    class="hero"
+    id="home"
+    aria-labelledby="hero-title"
+>
+
+    <div
+        class="hero-grid"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="hero-glow hero-glow-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="hero-glow hero-glow-two"
+        aria-hidden="true"
+    ></div>
+
+
+    <div class="container hero-container">
+
+
+        <!-- =================================================
+             HERO CONTENT
+        ================================================== -->
+
+        <div class="hero-content">
+
+
+            <div
+                class="availability"
+                role="status"
+            >
+
+                <span
+                    class="status-dot"
+                    aria-hidden="true"
+                ></span>
+
+                <span>
+                    Open to opportunities
+                </span>
+
+                <span class="availability-line"></span>
+
+                <small>
+                    Ethiopia
+                </small>
+
+            </div>
+
+
+            <p class="hero-greeting">
+                Hello, I'm
+            </p>
+
+
+            <h1 id="hero-title">
+
+                Abdirahman
+
+                <span>
+                    Mohamed Salat
+                </span>
+
+            </h1>
+
+
+            <div class="hero-role">
+
+                <span>
+                    Python Developer
+                </span>
+
+                <b aria-hidden="true">
+                    •
+                </b>
+
+                <span>
+                    AI Automation Engineer
+                </span>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                I design and build
+
+                <strong>
+                    practical software, intelligent automation,
+                    data solutions and modern web applications
+                </strong>
+
+                that transform real-world challenges into
+                useful digital solutions.
+
+            </p>
+
+
+            <!-- =================================================
+                 TECHNOLOGY HIGHLIGHTS
+            ================================================== -->
+
+            <div
+                class="hero-tech"
+                aria-label="Core technologies"
+            >
+
+                <span>
+                    <i
+                        class="fab fa-python"
+                        aria-hidden="true"
+                    ></i>
+                    Python
+                </span>
+
+                <span>
+                    <i
+                        class="fas fa-brain"
+                        aria-hidden="true"
+                    ></i>
+                    AI
+                </span>
+
+                <span>
+                    <i
+                        class="fas fa-diagram-project"
+                        aria-hidden="true"
+                    ></i>
+                    n8n
+                </span>
+
+                <span>
+                    <i
+                        class="fas fa-database"
+                        aria-hidden="true"
+                    ></i>
+                    Data
+                </span>
+
+                <span>
+                    <i
+                        class="fas fa-code"
+                        aria-hidden="true"
+                    ></i>
+                    Web
+                </span>
+
+            </div>
+
+
+            <!-- =================================================
+                 ACTIONS
+            ================================================== -->
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#projects"
+                    class="btn btn-primary"
+                >
+
+                    <i
+                        class="fas fa-code"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Explore My Work
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="{{ url_for('static', filename='assets/Abdirahman_Mohamed_CV.pdf') }}"
+                    class="btn btn-secondary"
+                    download
+                    aria-label="Download Abdirahman Mohamed Salat CV"
+                >
+
+                    <i
+                        class="fas fa-file-arrow-down"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Download CV
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 SOCIAL LINKS
+            ================================================== -->
+
+            <div
+                class="social-links"
+                aria-label="Social media and contact links"
+            >
+
+                <span class="social-label">
+                    Connect
+                </span>
+
+                <a
+                    href="https://www.linkedin.com/in/abdirahman-mohamed-562218408/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"
+                >
+                    <i
+                        class="fab fa-linkedin-in"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+                <a
+                    href="https://wa.me/251964029601"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contact via WhatsApp"
+                >
+                    <i
+                        class="fab fa-whatsapp"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+                <a
+                    href="https://web.facebook.com/adammohamed.salat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook profile"
+                >
+                    <i
+                        class="fab fa-facebook-f"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+                <a
+                    href="mailto:abdi0964moha@gmail.com"
+                    aria-label="Send email"
+                >
+                    <i
+                        class="fas fa-envelope"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             HERO VISUAL
+        ================================================== -->
+
+        <div
+            class="hero-visual"
+            aria-label="Professional profile"
+        >
+
+            <div
+                class="hero-orbit orbit-one"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-orbit orbit-two"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- =================================================
+                 PROFILE CARD
+            ================================================== -->
+
+            <div class="profile-card">
+
+                <div class="profile-image-wrapper">
+
+                    <img
+                        src="{{ url_for('static', filename='images/profile.jpg') }}"
+                        alt="Professional portrait of Abdirahman Mohamed Salat"
+                        class="profile-image"
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
+                        width="600"
+                        height="600"
+                    >
+
+                    <div
+                        class="profile-placeholder"
+                        aria-hidden="true"
+                    >
+                        AM
+                    </div>
+
+                    <span
+                        class="profile-online"
+                        aria-label="Available"
+                    ></span>
+
+                </div>
+
+
+                <div class="profile-card-info">
+
+                    <span class="profile-label">
+                        PYTHON • AI • DATA • WEB
+                    </span>
+
+                    <h2>
+                        Abdirahman Mohamed Salat
+                    </h2>
+
+                    <p>
+                        Building practical digital solutions
+                    </p>
+
+
+                    <div class="profile-tags">
+
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Flask</span>
+                        <span>AI</span>
+                        <span>n8n</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PYTHON CARD
+            ================================================== -->
+
+            <div
+                class="floating-card python-card"
+                aria-hidden="true"
+            >
+
+                <div class="floating-icon python-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Python Development
+                    </strong>
+
+                    <small>
+                        Django • Flask • APIs
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 AI CARD
+            ================================================== -->
+
+            <div
+                class="floating-card ai-card"
+                aria-hidden="true"
+            >
+
+                <div class="floating-icon ai-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        AI Automation
+                    </strong>
+
+                    <small>
+                        n8n • AI • Workflows
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 DATA CARD
+            ================================================== -->
+
+            <div
+                class="floating-card data-card"
+                aria-hidden="true"
+            >
+
+                <div class="floating-icon data-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Data Analytics
+                    </strong>
+
+                    <small>
+                        Python • Pandas • BI
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         HERO BOTTOM
+    ================================================== -->
+
+    <div class="hero-bottom">
+
+        <div class="container hero-bottom-inner">
+
+            <div class="hero-bottom-item">
+
+                <span class="hero-bottom-number">
+                    01
+                </span>
+
+                <span>
+                    Software Development
+                </span>
+
+            </div>
+
+            <div class="hero-bottom-item">
+
+                <span class="hero-bottom-number">
+                    02
+                </span>
+
+                <span>
+                    AI & Automation
+                </span>
+
+            </div>
+
+            <div class="hero-bottom-item">
+
+                <span class="hero-bottom-number">
+                    03
+                </span>
+
+                <span>
+                    Data & Analytics
+                </span>
+
+            </div>
+
+            <div class="hero-bottom-item">
+
+                <span class="hero-bottom-number">
+                    04
+                </span>
+
+                <span>
+                    Digital Solutions
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         SCROLL INDICATOR
+    ================================================== -->
+
+    <a
+        href="#about"
+        class="scroll-indicator"
+        aria-label="Scroll to About section"
+    >
+
+        <span>
+            Scroll to explore
+        </span>
+
+        <i
+            class="fas fa-arrow-down"
+            aria-hidden="true"
+        ></i>
+
+    </a>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================== -->
+
+<section
+    class="section"
+    id="about"
+    aria-labelledby="about-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    01 — ABOUT ME
+                </span>
+
+                <h2 id="about-title">
+                    Technology with
+                    <span>
+                        purpose.
+                    </span>
+                </h2>
+
+            </div>
+
+            <p>
+                A multidisciplinary background connecting
+                healthcare, community development, technology,
+                data and software engineering.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="about-text">
+
+                <p class="lead">
+
+                    I am a multidisciplinary professional
+                    combining experience in healthcare,
+                    community development, technology,
+                    data analytics and software development.
+
+                </p>
+
+                <p>
+
+                    My technology journey is focused on creating
+                    practical applications and automation systems
+                    that solve real-world problems.
+
+                </p>
+
+                <p>
+
+                    I work with
+
+                    <strong>
+                        Python, Django, Flask, PostgreSQL,
+                        SQLite, APIs, data analysis,
+                        JavaScript and modern web technologies.
+                    </strong>
+
+                </p>
+
+                <p>
+
+                    I am also developing advanced skills in
+
+                    <strong>
+                        AI automation and n8n workflow design
+                    </strong>
+
+                    to connect systems, automate repetitive work
+                    and improve operational efficiency.
+
+                </p>
+
+
+                <div class="about-highlight">
+
+                    <i
+                        class="fas fa-lightbulb"
+                        aria-hidden="true"
+                    ></i>
+
+                    <div>
+
+                        <strong>
+                            My approach
+                        </strong>
+
+                        <p>
+                            Understand the problem → design the
+                            solution → build the system → measure
+                            the result → improve continuously.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+
+                    <strong>
+                        Python
+                    </strong>
+
+                    <span>
+                        Development
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+
+                    <strong>
+                        AI Automation
+                    </strong>
+
+                    <span>
+                        Intelligent workflows
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <strong>
+                        Data
+                    </strong>
+
+                    <span>
+                        Analytics & insights
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+
+                    <strong>
+                        Full Stack
+                    </strong>
+
+                    <span>
+                        Web applications
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================== -->
+
+<section
+    class="section section-dark"
+    id="services"
+    aria-labelledby="services-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    02 — SERVICES
+                </span>
+
+                <h2 id="services-title">
+                    What I can
+                    <span>
+                        build.
+                    </span>
+                </h2>
+
+            </div>
+
+            <p>
+                Practical technology services focused on
+                solving operational and business problems.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <article class="service-card">
+
+                <div class="service-top">
+
+                    <div class="service-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+                <h3>
+                    Python Development
+                </h3>
+
+                <p>
+                    Backend systems, APIs, automation scripts,
+                    data applications and production-ready
+                    Python solutions.
+                </p>
+
+                <div class="service-tags">
+                    <span>Python</span>
+                    <span>APIs</span>
+                    <span>Backend</span>
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-top">
+
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+                <h3>
+                    AI Automation
+                </h3>
+
+                <p>
+                    Intelligent workflows using AI models,
+                    n8n, APIs and business automation.
+                </p>
+
+                <div class="service-tags">
+                    <span>AI</span>
+                    <span>n8n</span>
+                    <span>Automation</span>
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-top">
+
+                    <div class="service-icon">
+                        <i class="fas fa-chart-column"></i>
+                    </div>
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+                <h3>
+                    Data Analytics
+                </h3>
+
+                <p>
+                    Transforming operational data into useful
+                    metrics, reports, dashboards and insights.
+                </p>
+
+                <div class="service-tags">
+                    <span>Pandas</span>
+                    <span>Excel</span>
+                    <span>Analytics</span>
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-top">
+
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+
+                    <span>
+                        04
+                    </span>
+
+                </div>
+
+                <h3>
+                    Web Applications
+                </h3>
+
+                <p>
+                    Responsive full-stack applications using
+                    Flask, Django, databases, JavaScript and APIs.
+                </p>
+
+                <div class="service-tags">
+                    <span>Django</span>
+                    <span>Flask</span>
+                    <span>Web</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+========================================================== -->
+
+<section
+    class="section"
+    id="skills"
+    aria-labelledby="skills-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    03 — TECHNICAL SKILLS
+                </span>
+
+                <h2 id="skills-title">
+                    My technical
+                    <span>
+                        toolkit.
+                    </span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="skills-container">
+
+
+            <article class="skill-category">
+
+                <div class="skill-category-title">
+
+                    <i class="fas fa-code"></i>
+
+                    <h3>
+                        Programming & Web
+                    </h3>
+
+                </div>
+
+                <div class="skill-list">
+
+                    <span class="skill">
+                        <i class="fab fa-python"></i>
+                        Python
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-layer-group"></i>
+                        Django
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-flask"></i>
+                        Flask
+                    </span>
+
+                    <span class="skill">
+                        <i class="fab fa-html5"></i>
+                        HTML5
+                    </span>
+
+                    <span class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        CSS3
+                    </span>
+
+                    <span class="skill">
+                        <i class="fab fa-js"></i>
+                        JavaScript
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <article class="skill-category">
+
+                <div class="skill-category-title">
+
+                    <i class="fas fa-robot"></i>
+
+                    <h3>
+                        AI & Automation
+                    </h3>
+
+                </div>
+
+                <div class="skill-list">
+
+                    <span class="skill">
+                        <i class="fas fa-diagram-project"></i>
+                        n8n
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-brain"></i>
+                        AI Models
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-plug"></i>
+                        APIs
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-gears"></i>
+                        Workflow Automation
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <article class="skill-category">
+
+                <div class="skill-category-title">
+
+                    <i class="fas fa-database"></i>
+
+                    <h3>
+                        Data & Databases
+                    </h3>
+
+                </div>
+
+                <div class="skill-list">
+
+                    <span class="skill">
+                        <i class="fas fa-database"></i>
+                        PostgreSQL
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-database"></i>
+                        SQLite
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-table"></i>
+                        Excel
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-chart-line"></i>
+                        Data Analysis
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-table-cells"></i>
+                        Pandas
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-chart-pie"></i>
+                        Dashboards
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <article class="skill-category">
+
+                <div class="skill-category-title">
+
+                    <i class="fas fa-toolbox"></i>
+
+                    <h3>
+                        Engineering Tools
+                    </h3>
+
+                </div>
+
+                <div class="skill-list">
+
+                    <span class="skill">
+                        <i class="fab fa-git-alt"></i>
+                        Git
+                    </span>
+
+                    <span class="skill">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-server"></i>
+                        REST APIs
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-network-wired"></i>
+                        WebSockets
+                    </span>
+
+                    <span class="skill">
+                        <i class="fas fa-terminal"></i>
+                        Command Line
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================== -->
+
+<section
+    class="section section-dark"
+    id="experience"
+    aria-labelledby="experience-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    04 — EXPERIENCE
+                </span>
+
+                <h2 id="experience-title">
+                    Professional
+                    <span>
+                        journey.
+                    </span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <article class="timeline-item">
+
+                <div
+                    class="timeline-marker"
+                    aria-hidden="true"
+                >
+                    <i class="fas fa-users"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        April 2023 — May 2026
+                    </span>
+
+                    <h3>
+                        Community Health Mobilizer Officer
+                    </h3>
+
+                    <h4>
+                        Mahibere Hiwot for Social Development
+                    </h4>
+
+                    <p>
+                        Community mobilization, health awareness,
+                        community engagement, data collection,
+                        reporting and social development activities.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item">
+
+                <div
+                    class="timeline-marker"
+                    aria-hidden="true"
+                >
+                    <i class="fas fa-heart-pulse"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        December 2021 — September 2022
+                    </span>
+
+                    <h3>
+                        Health Officer
+                    </h3>
+
+                    <h4>
+                        Teklehaymanot Health Center
+                    </h4>
+
+                    <p>
+                        Healthcare service experience across
+                        ANC, PNC, OPD, Under-Five Children,
+                        Psychiatry and Emergency services.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item">
+
+                <div
+                    class="timeline-marker"
+                    aria-hidden="true"
+                >
+                    <i class="fas fa-headset"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Professional Experience
+                    </span>
+
+                    <h3>
+                        Customer & Technology Operations
+                    </h3>
+
+                    <h4>
+                        Customer Service & Technology Environment
+                    </h4>
+
+                    <p>
+                        Customer communication, service operations,
+                        problem solving, performance monitoring
+                        and technology-enabled workflows.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item">
+
+                <div
+                    class="timeline-marker"
+                    aria-hidden="true"
+                >
+                    <i class="fas fa-chalkboard-user"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Previous Experience
+                    </span>
+
+                    <h3>
+                        Computer Teacher
+                    </h3>
+
+                    <h4>
+                        Golden Future Institute
+                    </h4>
+
+                    <p>
+                        Supported learners in computer literacy,
+                        digital skills and practical technology
+                        knowledge.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item">
+
+                <div
+                    class="timeline-marker"
+                    aria-hidden="true"
+                >
+                    <i class="fas fa-building"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2018 — 2019
+                    </span>
+
+                    <h3>
+                        Assistant Office Manager
+                    </h3>
+
+                    <h4>
+                        Mohamed Ali Electronic Supplier
+                    </h4>
+
+                    <p>
+                        Office administration, documentation,
+                        coordination and organizational support.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================== -->
+
+<section
+    class="section"
+    id="projects"
+    aria-labelledby="projects-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    05 — SELECTED PROJECTS
+                </span>
+
+                <h2 id="projects-title">
+                    Things I
+                    <span>
+                        build.
+                    </span>
+                </h2>
+
+            </div>
+
+            <p>
+                Practical systems focused on automation,
+                analytics, web applications and business
+                operations.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+                <span class="project-category">
+                    DATA & ANALYTICS
+                </span>
+
+                <h3>
+                    Data Analytics Dashboard
+                </h3>
+
+                <p>
+                    Operational analytics system for transforming
+                    raw data into KPIs, reports and visual dashboards.
+                </p>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Analytics</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+                <span class="project-category">
+                    AI AUTOMATION
+                </span>
+
+                <h3>
+                    AI Workflow Automation
+                </h3>
+
+                <p>
+                    Automated workflows connecting AI models,
+                    APIs, data sources and operational processes.
+                </p>
+
+                <div class="project-tech">
+                    <span>n8n</span>
+                    <span>AI</span>
+                    <span>APIs</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+                <span class="project-category">
+                    WEB DEVELOPMENT
+                </span>
+
+                <h3>
+                    Flask Web Applications
+                </h3>
+
+                <p>
+                    Full-stack Flask systems combining Python,
+                    databases, APIs, HTML, CSS and JavaScript.
+                </p>
+
+                <div class="project-tech">
+                    <span>Flask</span>
+                    <span>Python</span>
+                    <span>SQLite</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+
+                    <span>
+                        04
+                    </span>
+
+                </div>
+
+                <span class="project-category">
+                    DJANGO
+                </span>
+
+                <h3>
+                    Django Management Systems
+                </h3>
+
+                <p>
+                    Structured Django applications with
+                    authentication, models, databases, templates
+                    and business logic.
+                </p>
+
+                <div class="project-tech">
+                    <span>Django</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <span>
+                        05
+                    </span>
+
+                </div>
+
+                <span class="project-category">
+                    BACKEND
+                </span>
+
+                <h3>
+                    Database Applications
+                </h3>
+
+                <p>
+                    Backend systems designed to securely store,
+                    process, retrieve and organize operational data.
+                </p>
+
+                <div class="project-tech">
+                    <span>PostgreSQL</span>
+                    <span>SQLite</span>
+                    <span>Python</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fas fa-gears"></i>
+                    </div>
+
+                    <span>
+                        06
+                    </span>
+
+                </div>
+
+                <span class="project-category">
+                    AUTOMATION
+                </span>
+
+                <h3>
+                    Business Process Automation
+                </h3>
+
+                <p>
+                    Automation concepts connecting systems,
+                    reducing manual work and improving information flow.
+                </p>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>n8n</span>
+                    <span>APIs</span>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="projects-more">
+
+            <a
+                href="#contact"
+                class="btn btn-primary"
+            >
+
+                <i
+                    class="fas fa-paper-plane"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Discuss a Project
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================== -->
+
+<section
+    class="section section-dark"
+    id="education"
+    aria-labelledby="education-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    06 — EDUCATION
+                </span>
+
+                <h2 id="education-title">
+                    A multidisciplinary
+                    <span>
+                        foundation.
+                    </span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-grid">
+
+
+            <article class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <span>
+                    MASTER'S DEGREE
+                </span>
+
+                <h3>
+                    Master of Public Health
+                    in Reproductive Health
+                </h3>
+
+                <p>
+                    Kea-Med Medical College
+                </p>
+
+                <small>
+                    Addis Ababa, Ethiopia
+                </small>
+
+            </article>
+
+
+            <article class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-globe-africa"></i>
+                </div>
+
+                <span>
+                    BACHELOR'S DEGREE
+                </span>
+
+                <h3>
+                    Disaster Risk Management
+                    & Sustainable Development
+                </h3>
+
+                <p>
+                    Yardstick International College
+                </p>
+
+                <small>
+                    Addis Ababa, Ethiopia
+                </small>
+
+            </article>
+
+
+            <article class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-heart-pulse"></i>
+                </div>
+
+                <span>
+                    BACHELOR'S DEGREE
+                </span>
+
+                <h3>
+                    BSc Health Officer
+                </h3>
+
+                <p>
+                    Africa Medical College
+                </p>
+
+                <small>
+                    Addis Ababa, Ethiopia
+                </small>
+
+            </article>
+
+
+            <article class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+
+                <span>
+                    SECONDARY EDUCATION
+                </span>
+
+                <h3>
+                    Secondary School Education
+                </h3>
+
+                <p>
+                    Dolo Ado, Ethiopia
+                </p>
+
+                <small>
+                    Ethiopia
+                </small>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TRAINING
+========================================================== -->
+
+<section
+    class="section"
+    id="training"
+    aria-labelledby="training-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    07 — PROFESSIONAL TRAINING
+                </span>
+
+                <h2 id="training-title">
+                    Continuous
+                    <span>
+                        learning.
+                    </span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="training-list">
+
+            <span>
+                <i class="fas fa-check"></i>
+                Python Development
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Data Analytics
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Community Development
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Emergency Medicine
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Gender Health Development
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Adolescent & Youth Health
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Public Health Emergency Management
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Family Planning Services
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Infection Prevention & Control
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                First Aid
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Human Nutrition
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Project Management
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Research
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Leadership Management
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Business Fundamentals
+            </span>
+
+            <span>
+                <i class="fas fa-check"></i>
+                Computer Skills
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LANGUAGES
+========================================================== -->
+
+<section
+    class="section section-dark"
+    id="languages"
+    aria-labelledby="languages-title"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    08 — LANGUAGES
+                </span>
+
+                <h2 id="languages-title">
+                    Communication that
+                    <span>
+                        connects.
+                    </span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="language-grid">
+
+
+            <article class="language-card">
+
+                <div class="language-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Somali
+                    </h3>
+
+                    <p>
+                        Native
+                    </p>
+
+                </div>
+
+                <span>
+                    NATIVE
+                </span>
+
+            </article>
+
+
+            <article class="language-card">
+
+                <div class="language-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+
+                <div>
+
+                    <h3>
+                        English
+                    </h3>
+
+                    <p>
+                        Excellent
+                    </p>
+
+                </div>
+
+                <span>
+                    EXCELLENT
+                </span>
+
+            </article>
+
+
+            <article class="language-card">
+
+                <div class="language-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Amharic
+                    </h3>
+
+                    <p>
+                        Very Good
+                    </p>
+
+                </div>
+
+                <span>
+                    VERY GOOD
+                </span>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================== -->
+
+<section
+    class="section contact-section"
+    id="contact"
+    aria-labelledby="contact-title"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    09 — CONTACT
+                </span>
+
+                <h2 id="contact-title">
+                    Let's build something
+                    <span>
+                        useful.
+                    </span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-wrapper">
+
+
+            <!-- =================================================
+                 CONTACT INFORMATION
+            ================================================== -->
+
+            <div class="contact-content">
+
+                <span class="contact-eyebrow">
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+
+                    Have an idea?
+
+                    <span>
+                        Let's talk.
+                    </span>
+
+                </h2>
+
+                <p>
+
+                    Whether you have a software project,
+                    automation idea, analytics requirement,
+                    collaboration opportunity or professional
+                    opportunity, I would be happy to connect.
+
+                </p>
+
+
+                <div class="contact-details">
+
+
+                    <a
+                        href="tel:+251964029601"
+                        class="contact-detail"
+                    >
+
+                        <span
+                            class="contact-icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fas fa-phone"></i>
+                        </span>
+
+                        <span>
+
+                            <small>
+                                Phone
+                            </small>
+
+                            <strong>
+                                +251 964 029 601
+                            </strong>
+
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="mailto:abdi0964moha@gmail.com"
+                        class="contact-detail"
+                    >
+
+                        <span
+                            class="contact-icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fas fa-envelope"></i>
+                        </span>
+
+                        <span>
+
+                            <small>
+                                Email
+                            </small>
+
+                            <strong>
+                                abdi0964moha@gmail.com
+                            </strong>
+
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/251964029601"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-detail"
+                    >
+
+                        <span
+                            class="contact-icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fab fa-whatsapp"></i>
+                        </span>
+
+                        <span>
+
+                            <small>
+                                WhatsApp
+                            </small>
+
+                            <strong>
+                                +251 964 029 601
+                            </strong>
+
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/abdirahman-mohamed-562218408/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-detail"
+                    >
+
+                        <span
+                            class="contact-icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fab fa-linkedin-in"></i>
+                        </span>
+
+                        <span>
+
+                            <small>
+                                LinkedIn
+                            </small>
+
+                            <strong>
+                                Abdirahman Mohamed
+                            </strong>
+
+                        </span>
+
+                    </a>
+
+
+                    <div
+                        class="contact-detail"
+                        role="group"
+                        aria-label="Location"
+                    >
+
+                        <span
+                            class="contact-icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fas fa-location-dot"></i>
+                        </span>
+
+                        <span>
+
+                            <small>
+                                Location
+                            </small>
+
+                            <strong>
+                                Addis Ababa, Ethiopia
+                            </strong>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 CONTACT FORM
+            ================================================== -->
+
+            <div class="contact-form-wrapper">
+
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+
+                    {% if messages %}
+
+                        <div
+                            class="flash-messages"
+                            aria-live="polite"
+                        >
+
+                            {% for category, message in messages %}
+
+                                <div
+                                    class="flash-message {{ category }}"
+                                    role="alert"
+                                >
+
+                                    <i
+                                        class="fas {% if category == 'success' %}fa-circle-check{% else %}fa-circle-exclamation{% endif %}"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    <span>
+                                        {{ message }}
+                                    </span>
+
+                                </div>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% endif %}
+
+                {% endwith %}
+
+
+                <div
+                    id="contactStatus"
+                    class="contact-status"
+                    role="status"
+                    aria-live="polite"
+                    aria-atomic="true"
+                    hidden
+                ></div>
+
+
+                <form
+                    class="contact-form"
+                    action="{{ url_for('contact') }}"
+                    method="POST"
+                    id="contactForm"
+                    novalidate
+                >
+
+                    <div class="form-header">
+
+                        <span>
+                            SEND A MESSAGE
+                        </span>
+
+                        <p>
+                            Tell me about your project,
+                            idea or opportunity.
+                        </p>
+
+                    </div>
+
+
+                    {% if csrf_token is defined %}
+
+                        <input
+                            type="hidden"
+                            name="csrf_token"
+                            value="{{ csrf_token() }}"
+                        >
+
+                    {% endif %}
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="100"
+                                inputmode="text"
+                                required
+                                aria-required="true"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Your Email
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                maxlength="150"
+                                inputmode="email"
+                                required
+                                aria-required="true"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What would you like to discuss?"
+                            minlength="3"
+                            maxlength="200"
+                            autocomplete="off"
+                            required
+                            aria-required="true"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="7"
+                            placeholder="Write your message here..."
+                            minlength="10"
+                            maxlength="5000"
+                            required
+                            aria-required="true"
+                        ></textarea>
+
+
+                        <small
+                            class="character-counter"
+                            id="characterCounter"
+                        >
+
+                            <span id="characterCount">
+                                0
+                            </span>
+
+                            / 5000
+
+                        </small>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary btn-full"
+                        id="submitButton"
+                    >
+
+                        <i
+                            class="fas fa-paper-plane"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Send Message
+                        </span>
+
+                    </button>
+
+
+                    <p class="form-note">
+
+                        <i
+                            class="fas fa-shield-halved"
+                            aria-hidden="true"
+                        ></i>
+
+                        Your message will be handled securely.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     PREMIUM FOOTER
+========================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             FOOTER CTA
+        ================================================== -->
+
+        <div class="footer-cta">
+
+            <div class="footer-cta-content">
+
+                <span class="footer-cta-label">
+                    HAVE A PROJECT IN MIND?
+                </span>
+
+                <h2>
+                    Let's turn your idea into
+                    <span>
+                        something useful.
+                    </span>
+                </h2>
+
+                <p>
+                    Software development, AI automation,
+                    data analytics and modern digital solutions.
+                </p>
+
+            </div>
+
+
+            <a
+                href="#contact"
+                class="footer-cta-button"
+            >
+
+                <span>
+                    Start a Conversation
+                </span>
+
+                <i
+                    class="fas fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                ></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER MAIN
+        ================================================== -->
+
+        <div class="footer-main">
+
+
+            <!-- =================================================
+                 FOOTER BRAND
+            ================================================== -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="footer-logo"
+                    aria-label="Abdirahman Mohamed Salat - Home"
+                >
+
+                    <span
+                        class="footer-logo-mark"
+                        aria-hidden="true"
+                    >
+                        AM
+                    </span>
+
+                    <span class="footer-logo-text">
+
+                        <strong>
+                            Abdirahman
+                        </strong>
+
+                        <small>
+                            Mohamed Salat
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Python Developer, AI Automation Engineer
+                    and Data & Technology Professional building
+                    practical digital solutions for real-world
+                    problems.
+
+                </p>
+
+
+                <div
+                    class="footer-status"
+                    role="status"
+                >
+
+                    <span
+                        class="footer-status-dot"
+                        aria-hidden="true"
+                    ></span>
+
+                    <span>
+                        Available for opportunities
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 FOOTER NAVIGATION
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#experience">
+                            Experience
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 FOOTER RESOURCES
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#education">
+                            Education
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#training">
+                            Training
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#languages">
+                            Languages
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="{{ url_for('static', filename='assets/Abdirahman_Mohamed_CV.pdf') }}"
+                            download
+                        >
+                            Download CV
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 FOOTER CONTACT
+            ================================================== -->
+
+            <div class="footer-column footer-contact-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+
+                <a
+                    href="mailto:abdi0964moha@gmail.com"
+                    class="footer-contact-item"
+                >
+
+                    <span class="footer-contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+
+                    <span>
+                        <small>
+                            Email
+                        </small>
+
+                        <strong>
+                            abdi0964moha@gmail.com
+                        </strong>
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="tel:+251964029601"
+                    class="footer-contact-item"
+                >
+
+                    <span class="footer-contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </span>
+
+                    <span>
+                        <small>
+                            Phone
+                        </small>
+
+                        <strong>
+                            +251 964 029 601
+                        </strong>
+                    </span>
+
+                </a>
+
+
+                <div class="footer-contact-item">
+
+                    <span class="footer-contact-icon">
+                        <i class="fas fa-location-dot"></i>
+                    </span>
+
+                    <span>
+                        <small>
+                            Location
+                        </small>
+
+                        <strong>
+                            Addis Ababa, Ethiopia
+                        </strong>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER SOCIAL BAR
+        ================================================== -->
+
+        <div class="footer-social-bar">
+
+
+            <div class="footer-social-intro">
+
+                <span>
+                    CONNECT WITH ME
+                </span>
+
+                <small>
+                    Follow my professional journey
+                </small>
+
+            </div>
+
+
+            <div
+                class="footer-social"
+                aria-label="Footer social links"
+            >
+
+                <a
+                    href="https://www.linkedin.com/in/abdirahman-mohamed-562218408/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"
+                    title="LinkedIn"
+                >
+
+                    <i
+                        class="fab fa-linkedin-in"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/251964029601"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                    title="WhatsApp"
+                >
+
+                    <i
+                        class="fab fa-whatsapp"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        WhatsApp
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://web.facebook.com/adammohamed.salat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook profile"
+                    title="Facebook"
+                >
+
+                    <i
+                        class="fab fa-facebook-f"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Facebook
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mailto:abdi0964moha@gmail.com"
+                    aria-label="Send email"
+                    title="Email"
+                >
+
+                    <i
+                        class="fas fa-envelope"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Email
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="tel:+251964029601"
+                    aria-label="Call Abdirahman"
+                    title="Phone"
+                >
+
+                    <i
+                        class="fas fa-phone"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Call
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                <span>
+                    © {{ current_year }}
+                </span>
+
+                <strong>
+                    Abdirahman Mohamed Salat
+                </strong>
+
+                <span>
+                    — All rights reserved.
+                </span>
+
+            </p>
+
+
+            <div class="footer-bottom-links">
+
+                <a href="#home">
+                    Back to top
+                    <i
+                        class="fas fa-arrow-up"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </div>
+
+
+            <p class="footer-built">
+
+                Built with
+
+                <i
+                    class="fas fa-heart"
+                    aria-hidden="true"
+                ></i>
+
+                using
+
+                <strong>
+                    Python & Flask
+                </strong>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================== -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+>
+
+    <i
+        class="fas fa-arrow-up"
+        aria-hidden="true"
+    ></i>
+
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================== -->
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+    defer
+></script>
+
+
+</body>
+
+</html>
